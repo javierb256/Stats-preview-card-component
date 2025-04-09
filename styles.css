@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -58,15 +60,105 @@ body {
 
     /* stat headings */
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+    /* Font Families */
+    --lexend-deca: "Lexend Deca", sans-serif;
+    --inter: "Inter", sans-serif;
+}
+
+
+/* .lexend-deca-<uniquifier> {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+.purple-highlight {
+  color: var(--soft-violet);
 }
 
 body {
     background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+}
+
+.container {
+  display: flex;
+  max-width: 1500px;
+  width: 90%;
+  height: 500px;
+  background-color: var(--dark-desaturated-blue);
+  justify-content: space-between;
+}
+
+.container h1 {
+  color: white;
+  font-family: var(--lexend-deca);
+}
+
+.data {
+  width: 50%;
+}
+
+.data > p {
+  color: var(--slightly-transparent-white);
+  font-family: var(--lexend-deca);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--inter);
+}
+
+.stat p:first-child {
+  color: var(--white);
+}
+
+.stat p:last-child {
+  color: var(--slightly-transparent-white);
+}
+
+.banner {
+  position: relative;
+  width: 50%;
+}
+
+.banner .overlay {
+  position: absolute;
+  z-index: 100;
+  background-color: var(--soft-violet);
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.banner img {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
