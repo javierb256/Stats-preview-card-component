@@ -104,34 +104,56 @@ body {
   height: 500px;
   background-color: var(--dark-desaturated-blue);
   justify-content: space-between;
+  border-radius: .4rem;
+  overflow: hidden;
 }
 
 .container h1 {
   color: white;
   font-family: var(--lexend-deca);
+  font-size: 2.5rem;
+  line-height: 40px;
 }
 
 .data {
+  display: flex;
+  flex-direction: column;
   width: 50%;
+  padding: 5rem 6.5rem;
 }
 
 .data > p {
   color: var(--slightly-transparent-white);
   font-family: var(--lexend-deca);
+  margin-top: 1.8rem;
+  line-height: 25px;
+  font-size: 1.1rem;
+  width: 455px;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 400px;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
   font-family: var(--inter);
+  gap: 6px;
 }
 
 .stat p:first-child {
   color: var(--white);
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .stat p:last-child {
   color: var(--slightly-transparent-white);
+  font-family: var(--lexend-deca);
 }
 
 .banner {
